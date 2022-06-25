@@ -21,11 +21,11 @@ class BankDetailsVerification extends StatelessWidget {
             const Heading(
               text: 'Kripya Intezaar karien!',
               fontSize: 30,
-            ),kHeight2,
+            ),
+            kHeight2,
             const SubHeading(
                 text: 'Aapka account verify ho rha hai!', fontSize: 22),
             Center(
-              //child: Lottie.asset('assest/json/73500-refresh.json'),
               child: Lottie.network(
                   'https://assets4.lottiefiles.com/packages/lf20_5apqyyue.json'),
             ),
