@@ -8,27 +8,33 @@ class CustomTextField extends StatelessWidget {
       {Key? key,
       required this.onChanged,
       this.inputType = TextInputType.text,
-      this.height = 50})
+      this.hintText = '',
+      this.height = 50,
+      this.width = 85})
       : super(key: key);
 
   final void Function(String)? onChanged;
   final TextInputType inputType;
   final double height;
+  final double width;
+  final String hintText;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: height,
-      width: 85.w,
+      width: width.w,
       child: TextField(
         style: const TextStyle(fontSize: 20),
         onChanged: onChanged,
         keyboardType: inputType,
-        decoration: const InputDecoration(
-          focusedBorder: OutlineInputBorder(
+        decoration: InputDecoration(
+          hintText: hintText,
+          hintStyle: TextStyle(color: kGreyBase),
+          focusedBorder: const OutlineInputBorder(
             borderSide: BorderSide(color: kPurple, width: 2),
           ),
-          enabledBorder: OutlineInputBorder(
+          enabledBorder: const OutlineInputBorder(
             borderSide: BorderSide(color: kGreyBase, width: 2),
           ),
         ),
