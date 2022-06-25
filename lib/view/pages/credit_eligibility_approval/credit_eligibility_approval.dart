@@ -29,12 +29,12 @@ class CreditEligibilityApproval extends StatelessWidget {
                     text:
                         'Aapko 12,000 tak ke rashi ka loan mil sakta hai, jo aapko 6 mahine ke andar wapas kar sakte hain.',
                     fontSize: 17,
-                  ),
+                  ),kHeight10,
                   CustomButton(
                     onTap: () {},
                     text: 'Loan lein',
                     width: 80.w,
-                  ),
+                  ),kHeight2,
                   TextButton(
                       onPressed: () {},
                       child: const Text(

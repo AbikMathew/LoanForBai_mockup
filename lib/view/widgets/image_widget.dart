@@ -53,10 +53,10 @@ class LandscapeImgWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 35, horizontal: 10),
+      padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
       child: Container(
-        height: 10.h,
-        width: 35.w,
+        height: 20.h,
+        width: 75.w,
         decoration: const BoxDecoration(
           image: DecorationImage(
             fit: BoxFit.cover,
