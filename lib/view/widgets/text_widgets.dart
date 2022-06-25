@@ -3,13 +3,15 @@ import 'package:flutter/material.dart';
 import '../../constants/color_constants.dart';
 
 class Heading extends StatelessWidget {
-  const Heading({Key? key, required this.text}) : super(key: key);
+  const Heading({Key? key, required this.text, this.fontSize = 40})
+      : super(key: key);
   final String text;
+  final double fontSize;
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: const TextStyle(fontSize: 40),
+      style: TextStyle(fontSize: fontSize),
     );
   }
 }
