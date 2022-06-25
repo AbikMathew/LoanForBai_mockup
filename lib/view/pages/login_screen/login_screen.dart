@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:loans_for_bai/constants/color_constants.dart';
 import 'package:loans_for_bai/constants/text_constants.dart';
-import 'package:loans_for_bai/constants/ui_constants';
+//import 'package:loans_for_bai/constants/ui_constants';
+import 'package:loans_for_bai/constants/ui_constants.dart';
+import 'package:loans_for_bai/view/widgets/custom_button.dart';
 import 'package:sizer/sizer.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -16,35 +19,67 @@ class LoginScreen extends StatelessWidget {
       // backgroundColor: Colors.red,
       body: Padding(
         padding: const EdgeInsets.all(12.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(), // To take full width of the screen, because column only takes the maximum width of it's children.
-            const ImgWidget(),
-            const SubHeading(
-              text: 'Apna Mobile Number Verify Karien',
-              fontSize: 20,
-            ),
-            kHeight10,
-            Row(
-              children: [
-                const Heading(text: '+91'),
-                SizedBox(
-                  width: 70.w,
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: 'Mobile Number',
-                      hintStyle: kText25b,
-                      // enabledBorder: ,
-                      border: const OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.amber, width: 2),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            )
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(), // To take full width of the screen, because column only takes the maximum width of it's children.
+              const ImgWidget(),
+              const SubHeading(
+                text: 'Apna Mobile Number Verify Karien',
+                fontSize: 20,
+              ),
+              kHeight10,
+              Row(
+                children: [
+                  kWidth3,
+                  const Heading(text: '+91'),
+                  kWidth1,
+                  InputTextField(),
+                ],
+              ),
+              OTPButtonAndTermsOfUser(),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Column OTPButtonAndTermsOfUser() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Container(),
+        kHeight7,
+        CustomButton(
+          onTap: () {},
+          text: 'OTP Payein',
+          width: 80.w,
+        ),
+        kHeight4,
+        const SubHeading(
+          text: 'Terms of User & Privacy Policy ko mante hain',
+          fontSize: 15,
+        ),
+      ],
+    );
+  }
+
+  SizedBox InputTextField() {
+    return SizedBox(
+      width: 67.w,
+      child: const TextField(
+        showCursor: false,
+        decoration: InputDecoration(
+          hintText: 'Mobile Number',
+          hintStyle: kText25b,
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: kPurple, width: 2),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: kGreyBase, width: 2),
+          ),
         ),
       ),
     );
