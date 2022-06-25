@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:loans_for_bai/constants/ui_constants';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+
+import '../../widgets/image_widget.dart';
+import '../../widgets/text_widgets.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -8,13 +12,22 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-      children: [
-        Image.asset('assest/image/loan_image.jpg'),
-        Container(),
-        Text('Loans for Bai'),
-        Text('Ab payein loan sirf kuch hi click mein'),
-      ],
+        body: SingleChildScrollView(
+      child: Column(
+        children: [
+          Container(), // To take full width of the screen, because column only takes the maximum width of it's children.
+          kHeight15,
+          const SplashLogo(),
+          kHeight7,
+          const Heading(
+            text: 'Loans for Bai',
+          ),
+          kHeight3,
+          const SubHeading(text: 'Ab payein loan sirf kuch hi click mein'),
+          kHeight5,
+        ],
+      ),
     ));
   }
 }
+
