@@ -10,6 +10,7 @@ class LoanAmountTransferring extends StatelessWidget {
       body: CenterHeadingWithIcon(
         heading: 'Loan aapke account me transfer ho rha hai!',
         icon: Icons.account_balance,
+        textAlignment: TextAlign.center,
       ),
     );
   }

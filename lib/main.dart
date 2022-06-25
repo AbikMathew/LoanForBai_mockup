@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:loans_for_bai/view/pages/employer_feedback_verification/employer_feedback_verification.dart';
+import 'view/pages/bank_details/bank_details.dart';
 import 'view/pages/bank_details_verification/bank_details_verification.dart';
 import 'package:sizer/sizer.dart';
 
 import 'view/pages/bank_details_verified/bank_details_verified.dart';
+import 'view/pages/loan_amount_transferred/loan_amount_transferred.dart';
 import 'view/pages/loan_amount_transferring/loan_amount_transferring.dart';
 
 void main() {
@@ -26,7 +29,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(primarySwatch: Colors.purple),
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: LoanAmountTransferring(),
+        home: BankDetails(),
         //home: BasicDetailsName(),
         //  home: const OtpVerification()
         //home: SplashScreen(),

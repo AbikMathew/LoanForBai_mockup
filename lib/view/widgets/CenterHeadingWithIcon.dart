@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:loans_for_bai/view/widgets/image_widget.dart';
 import 'package:loans_for_bai/view/widgets/text_widgets.dart';
+import 'package:sizer/sizer.dart';
 
 import '../../constants/color_constants.dart';
 import '../../constants/ui_constants.dart';
@@ -10,9 +11,11 @@ class CenterHeadingWithIcon extends StatelessWidget {
     Key? key,
     required this.heading,
     required this.icon,
+    this.textAlignment = TextAlign.start,
   }) : super(key: key);
   final String heading;
   final IconData icon;
+  final TextAlign textAlignment;
 
   @override
   Widget build(BuildContext context) {
@@ -24,16 +27,25 @@ class CenterHeadingWithIcon extends StatelessWidget {
           const ImgWidget(),
           kHeight5,
           Heading(
+            textAlignment: textAlignment,
             text: heading,
             fontSize: 25,
           ),
           kHeight7,
-          Center(
-            child: Icon(
-              icon,
-              size: 150,
-              color: kPurple,
-            ),
+          Stack(
+            children: [
+              Center(
+                child: Icon(
+                  icon,
+                  size: 150,
+                  color: kPurple,
+                ),
+              ),
+              Positioned(
+                right: 15.w,
+                top: -3.h,
+                child: const Icon(Icons.check,size: 150,color: kGreyBase,))
+            ],
           ),
         ],
       ),
