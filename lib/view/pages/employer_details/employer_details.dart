@@ -6,6 +6,7 @@ import 'package:sizer/sizer.dart';
 import '../../../constants/color_constants.dart';
 import '../../widgets/image_widget.dart';
 import '../../widgets/text_widgets.dart';
+import 'package:loans_for_bai/view/pages/credit_eligibility_approval/credit_eligibility_approval.dart';
 import '../../widgets/custom_text_field.dart';
 
 class EmployerDetails extends StatelessWidget {
@@ -33,7 +34,9 @@ class EmployerDetails extends StatelessWidget {
               kHeight5,
               Center(
                 child: CustomButton(
-                  onTap: () {},
+                  onTap: () {
+                    Get.to(const CreditEligibilityApproval());
+                  },
                   text: 'Loan Amount janein',
                   width: 55.w,
                   r: 35,
