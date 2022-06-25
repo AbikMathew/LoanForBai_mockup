@@ -31,6 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   get: ^4.6.5
+  lottie: ^1.3.0
   sizer: ^2.0.15
 
 dev_dependencies:
@@ -51,6 +52,7 @@ flutter:
   assets:
     - assest/image/loan_image.jpg
     - assest/image/landscape_image.jpg
+    - assest/json/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:loans_for_bai/constants/color_constants.dart';
-import 'package:loans_for_bai/view/pages/basic_details_name/basic_details_name.dart';
-import 'package:loans_for_bai/view/pages/login_screen/login_screen.dart';
-import 'package:loans_for_bai/view/pages/otp_verification/otp_verification.dart';
+import 'view/pages/bank_details_verification/bank_details_verification.dart';
 import 'package:sizer/sizer.dart';
-import 'package:loans_for_bai/view/pages/splash_screen/splash_screen.dart';
-
-import 'view/pages/employer_details/employer_details.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -29,7 +23,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(primarySwatch: Colors.purple),
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: EmployerDetails(),
+        home: BankDetailsVerification(),
         //home: BasicDetailsName(),
         //  home: const OtpVerification()
         //home: SplashScreen(),

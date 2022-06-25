@@ -11,7 +11,7 @@ class Heading extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: TextStyle(fontSize: fontSize),
+      style: TextStyle(fontSize: fontSize, color: kBlackBase),
     );
   }
 }
