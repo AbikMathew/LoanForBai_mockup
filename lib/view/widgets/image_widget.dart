@@ -29,21 +29,18 @@ class ImgWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 30,horizontal: 10),
-        child: Container(
-          height: 10.h,
-          width: 35.w,
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              fit: BoxFit.cover,
-              image: AssetImage('assest/image/loan_image.jpg'),
-            ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 35, horizontal: 10),
+      child: Container(
+        height: 10.h,
+        width: 35.w,
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            fit: BoxFit.cover,
+            image: AssetImage('assest/image/loan_image.jpg'),
           ),
         ),
       ),
     );
   }
 }
-

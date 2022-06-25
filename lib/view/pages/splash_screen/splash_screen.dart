@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:loans_for_bai/constants/ui_constants';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-
+import '../../../constants/ui_constants.dart';
 import '../../widgets/image_widget.dart';
 import '../../widgets/text_widgets.dart';
 
@@ -30,4 +29,3 @@ class SplashScreen extends StatelessWidget {
     ));
   }
 }
-
