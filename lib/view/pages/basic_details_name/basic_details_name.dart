@@ -23,7 +23,7 @@ class BasicDetailsName extends StatelessWidget {
           children: [
             const ImgWidget(),
             const CustomProgressIndicator(
-              progress: 0.25,
+              progress: 0.15,
             ),
             kHeight5,
             const SubHeading(

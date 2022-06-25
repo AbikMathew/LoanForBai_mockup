@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loans_for_bai/constants/ui_constants.dart';
 import 'package:loans_for_bai/view/pages/basic_details_dob/basic_details_dob.dart';
-import 'package:loans_for_bai/view/pages/basic_details_income/basic_details_income.dart';
 import 'package:loans_for_bai/view/widgets/custom_button.dart';
 import 'package:sizer/sizer.dart';
 import '../../widgets/custom_progress_indicator.dart';
@@ -10,8 +9,8 @@ import '../../widgets/custom_text_field.dart';
 import '../../widgets/image_widget.dart';
 import '../../widgets/text_widgets.dart';
 
-class BasicDetailsEmployment extends StatelessWidget {
-  const BasicDetailsEmployment({Key? key}) : super(key: key);
+class BasicDetailsIncome extends StatelessWidget {
+  const BasicDetailsIncome({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,11 +23,11 @@ class BasicDetailsEmployment extends StatelessWidget {
           children: [
             const ImgWidget(),
             const CustomProgressIndicator(
-              progress: 0.60,
+              progress: 0.8,
             ),
             kHeight5,
             const SubHeading(
-              text: 'Aap kitne ghar me khaam karte hain',
+              text: 'Aapki mahine ki income',
               fontSize: 19,
             ),
             kHeight4,
@@ -42,9 +41,9 @@ class BasicDetailsEmployment extends StatelessWidget {
             Center(
               child: CustomButton(
                 onTap: () {
-                  Get.to(const BasicDetailsIncome());
+                  Get.to(const BasicDetailsDob());
                 },
-                text: 'Aage badhein',
+                text: 'Loan Payein',
                 width: 80.w,
                 r: 20,
               ),

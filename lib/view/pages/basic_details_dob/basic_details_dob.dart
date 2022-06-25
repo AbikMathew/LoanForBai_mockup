@@ -24,7 +24,7 @@ class BasicDetailsDob extends StatelessWidget {
           children: [
             const ImgWidget(),
             const CustomProgressIndicator(
-              progress: 0.5,
+              progress: 0.35,
             ),
             kHeight5,
             const SubHeading(
