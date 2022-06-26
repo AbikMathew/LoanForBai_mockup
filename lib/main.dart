@@ -7,6 +7,7 @@ import 'view/pages/bank_details_verification/bank_details_verification.dart';
 import 'package:sizer/sizer.dart';
 
 import 'view/pages/bank_details_verified/bank_details_verified.dart';
+import 'view/pages/home_screen_loan_approved/home_screen_loan_approved.dart';
 import 'view/pages/loan_amount_transferred/loan_amount_transferred.dart';
 import 'view/pages/loan_amount_transferring/loan_amount_transferring.dart';
 
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(primarySwatch: Colors.purple),
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: BankDetails(),
+        home: HomeScreenLoanApproved(),
         //home: BasicDetailsName(),
         //  home: const OtpVerification()
         //home: SplashScreen(),

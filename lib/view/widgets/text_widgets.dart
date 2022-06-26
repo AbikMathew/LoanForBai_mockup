@@ -23,7 +23,7 @@ class Heading extends StatelessWidget {
 }
 
 class SubHeading extends StatelessWidget {
-  const SubHeading({Key? key, required this.text, this.fontSize = 20})
+  const SubHeading({Key? key, required this.text, this.fontSize = 18})
       : super(key: key);
   final String text;
   final double fontSize;

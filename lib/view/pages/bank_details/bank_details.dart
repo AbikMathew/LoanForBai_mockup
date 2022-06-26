@@ -4,10 +4,10 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:loans_for_bai/constants/color_constants.dart';
 import 'package:loans_for_bai/constants/ui_constants.dart';
 import 'package:loans_for_bai/view/widgets/custom_button.dart';
-import 'package:loans_for_bai/view/widgets/custom_text_field.dart';
 import 'package:loans_for_bai/view/widgets/image_widget.dart';
 import 'package:loans_for_bai/view/widgets/text_widgets.dart';
 import 'package:sizer/sizer.dart';
+import 'package:loans_for_bai/view/widgets/custom_text_field.dart';
 
 class BankDetails extends StatefulWidget {
   const BankDetails({Key? key}) : super(key: key);
