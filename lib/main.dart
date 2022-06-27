@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:loans_for_bai/view/pages/otp_verification/otp_verification.dart';
 import 'package:loans_for_bai/view/pages/splash_screen/splash_screen.dart';
 import 'package:sizer/sizer.dart';
 import 'package:get/get.dart';
@@ -26,8 +25,7 @@ class MyApp extends StatelessWidget {
         ),
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: OtpVerification(),
-        //home: const SplashScreen(),
+        home: const SplashScreen(),
       );
     });
   }
