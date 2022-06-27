@@ -7,11 +7,12 @@ import 'package:sizer/sizer.dart';
 import '../../widgets/HomeScreenLoanContainer.dart';
 
 class HomeScreenLoanApproved extends StatelessWidget {
-  const HomeScreenLoanApproved({Key? key}) : super(key: key);
+  const HomeScreenLoanApproved({Key? key, required this.showLoanDetailsColumn})
+      : super(key: key);
 
+  final bool showLoanDetailsColumn;
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -20,7 +21,8 @@ class HomeScreenLoanApproved extends StatelessWidget {
           children: [
             const ImgWidget(),
             kHeight2,
-            LoanDetailsColumn(),
+            Visibility(
+                visible: showLoanDetailsColumn, child: LoanDetailsColumn()),
             kHeight3,
             const HomeScreenLoanContainer()
           ],

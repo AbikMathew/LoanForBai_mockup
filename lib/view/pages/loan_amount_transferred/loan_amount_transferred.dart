@@ -13,7 +13,7 @@ class LoanAmountTransferred extends StatelessWidget {
   Widget build(BuildContext context) {
     Timer(
       const Duration(seconds: 2),
-      () => Get.off(const Navbar(), transition: Transition.rightToLeft),
+      () => Get.off(const Navbar(showLoanDetailsColumn: true), transition: Transition.rightToLeft),
     );
     return const Scaffold(
       body: CenterHeadingWithIcon(

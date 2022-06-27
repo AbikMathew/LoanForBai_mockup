@@ -7,6 +7,7 @@ import 'package:sizer/sizer.dart';
 import '../../../constants/color_constants.dart';
 import '../../widgets/image_widget.dart';
 import '../../widgets/text_widgets.dart';
+import '../navbar/navbar.dart';
 
 class CreditEligibilityApproval extends StatelessWidget {
   const CreditEligibilityApproval({Key? key}) : super(key: key);
@@ -41,7 +42,9 @@ class CreditEligibilityApproval extends StatelessWidget {
                   ),
                   kHeight2,
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () => Get.offAll(
+                          const Navbar(showLoanDetailsColumn: false),
+                          transition: Transition.rightToLeft),
                       child: const Text(
                         'Abhi Loan nahi chahiye',
                         style: TextStyle(
