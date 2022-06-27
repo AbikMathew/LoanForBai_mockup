@@ -1,17 +1,11 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
 import 'package:loans_for_bai/constants/ui_constants.dart';
 import 'package:loans_for_bai/view/pages/credit_eligibility_approval/credit_eligibility_approval.dart';
 import 'package:lottie/lottie.dart';
-
-import '../../widgets/center_heading_with_icon.dart';
 import '../../widgets/image_widget.dart';
 import '../../widgets/text_widgets.dart';
-import '../login_screen/login_screen.dart';
 
 class EmployerFeedbackVerification extends StatelessWidget {
   const EmployerFeedbackVerification({Key? key}) : super(key: key);
@@ -32,11 +26,12 @@ class EmployerFeedbackVerification extends StatelessWidget {
             const ImgWidget(),
             const Heading(
               text: 'Kripya Intezaar karien!',
-              fontSize: 30,
+              fontSize: 24,
             ),
-            kHeight2,
+            kHeight1,
             const SubHeading(
-                text: 'Aapka details verify ho rha hai!', fontSize: 22),
+                text: 'Aapka details verify ho rha hai!', fontSize: 18),
+            kHeight5,
             Center(
               child: Lottie.network(
                   'https://assets4.lottiefiles.com/packages/lf20_5apqyyue.json'),

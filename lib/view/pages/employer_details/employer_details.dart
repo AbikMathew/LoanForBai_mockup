@@ -27,7 +27,7 @@ class EmployerDetails extends StatelessWidget {
                   text: 'Janein aapko Kitna Loan Milega?', fontSize: 25),
               kHeight2,
               const SubHeading(
-                  fontSize: 18,
+                  fontSize: 16,
                   text:
                       'Jinke pass aap kaam karte hain, unka mobile number dein'),
               kHeight2,

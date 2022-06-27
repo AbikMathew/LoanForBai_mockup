@@ -29,13 +29,14 @@ class LoginScreen extends StatelessWidget {
               const ImgWidget(),
               const SubHeading(
                 text: 'Apna Mobile Number Verify Karien',
-                fontSize: 20,
+                //fontSize: 20,
               ),
               kHeight10,
               Row(
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   kWidth3,
-                  const Heading(text: '+91'),
+                  const Heading(text: '+91',fontSize: 35,),
                   kWidth1,
                   InputTextField(),
                 ],
@@ -65,7 +66,7 @@ class LoginScreen extends StatelessWidget {
         kHeight4,
         const SubHeading(
           text: 'Terms of User & Privacy Policy ko mante hain',
-          fontSize: 15,
+          fontSize: 13,
         ),
       ],
     );
@@ -73,6 +74,7 @@ class LoginScreen extends StatelessWidget {
 
   SizedBox InputTextField() {
     return SizedBox(
+      height: 7.h,
       width: 67.w,
       child: const TextField(
         showCursor: false,

@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:loans_for_bai/view/pages/login_screen/login_screen.dart';
 import '../../../constants/ui_constants.dart';
 import '../../widgets/image_widget.dart';
 import '../../widgets/text_widgets.dart';
+import '../login_screen/login_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -26,9 +26,13 @@ class SplashScreen extends StatelessWidget {
             kHeight7,
             const Heading(
               text: 'Loans for Bai',
+              fontSize: 32,
             ),
-            kHeight3,
-            const SubHeading(text: 'Ab payein loan sirf kuch hi click mein'),
+            kHeight2,
+            const SubHeading(
+              text: 'Ab payein loan sirf kuch hi click mein',
+              fontSize: 15,
+            ),
             kHeight5,
           ],
         ),

@@ -54,7 +54,7 @@ Column VerifyButtonAndTermsOfUser(VoidCallback onTap) {
       kHeight4,
       const SubHeading(
         text: 'Terms of User & Privacy Policy ko mante hain',
-        fontSize: 15,
+        fontSize: 13,
       ),
     ],
   );

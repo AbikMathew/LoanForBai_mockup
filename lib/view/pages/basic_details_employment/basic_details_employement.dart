@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loans_for_bai/constants/ui_constants.dart';
-import 'package:loans_for_bai/view/pages/basic_details_dob/basic_details_dob.dart';
 import 'package:loans_for_bai/view/pages/basic_details_income/basic_details_income.dart';
 import 'package:loans_for_bai/view/widgets/custom_button.dart';
 import 'package:sizer/sizer.dart';
@@ -16,7 +15,6 @@ class BasicDetailsEmployment extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //  backgroundColor: Colors.red,
       body: Padding(
         padding: const EdgeInsets.all(15.0),
         child: Column(
@@ -29,7 +27,7 @@ class BasicDetailsEmployment extends StatelessWidget {
             kHeight5,
             const SubHeading(
               text: 'Aap kitne ghar me khaam karte hain',
-              fontSize: 19,
+              fontSize: 16,
             ),
             kHeight4,
             CustomTextField(

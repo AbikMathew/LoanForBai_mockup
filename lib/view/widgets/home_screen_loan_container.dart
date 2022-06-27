@@ -17,7 +17,7 @@ class HomeScreenLoanContainer extends StatelessWidget {
     return Container(
         padding: const EdgeInsets.all(15),
         width: 92.w,
-        height: 26.h,
+        height: 23.h,
         decoration:
             BoxDecoration(border: Border.all(color: kGreyBase, width: 2)),
         child: Column(
@@ -25,8 +25,8 @@ class HomeScreenLoanContainer extends StatelessWidget {
           children: [
             const SubHeading(
               text:
-                  'Paayein 12,000 tak ka loan, 6 mahine\nke liye, sirf 12% ke bayaaz darr par!',
-              fontSize: 16,
+                  'Paayein 12,000 tak ka loan, 6 mahine ke liye, sirf 12% ke bayaaz darr par!',
+              fontSize: 15,
             ),
             kHeight4,
             CustomButton(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:intl/intl.dart';
 import 'package:loans_for_bai/constants/color_constants.dart';
 import 'package:loans_for_bai/constants/ui_constants.dart';
 import 'package:loans_for_bai/view/pages/basic_details_employment/basic_details_employement.dart';
@@ -10,13 +11,19 @@ import '../../widgets/custom_text_field.dart';
 import '../../widgets/image_widget.dart';
 import '../../widgets/text_widgets.dart';
 
-class BasicDetailsDob extends StatelessWidget {
-  const BasicDetailsDob({Key? key}) : super(key: key);
+class BasicDetailsDob extends StatefulWidget {
+  BasicDetailsDob({Key? key}) : super(key: key);
+
+  @override
+  State<BasicDetailsDob> createState() => _BasicDetailsDobState();
+}
+
+class _BasicDetailsDobState extends State<BasicDetailsDob> {
+  final TextEditingController _dateController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //  backgroundColor: Colors.red,
       body: Padding(
         padding: const EdgeInsets.all(15.0),
         child: Column(
@@ -35,16 +42,25 @@ class BasicDetailsDob extends StatelessWidget {
               children: [
                 kWidth15,
                 CustomTextField(
+                  controller: _dateController,
                   hintText: 'DOB',
                   width: 50,
                   inputType: TextInputType.datetime,
-                  onChanged: (val) {
-                    // var a = val;
-                  },
+                  onChanged: (val) {},
                 ),
                 kWidth1,
                 IconButton(
-                    onPressed: () {},
+                    onPressed: () async {
+                      final date = await showDatePicker(
+                        context: context,
+                        initialDate: DateTime.now(),
+                        firstDate: DateTime(1900),
+                        lastDate: DateTime(2050),
+                      );
+                      _dateController.text =
+                          DateFormat('dd-MM-yyyy').format(date ?? DateTime.now());
+                      setState(() {});
+                    },
                     icon: const Icon(
                       Icons.calendar_today,
                       color: kBlackBase,
