@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:loans_for_bai/view/widgets/custom_button.dart';
 import 'package:loans_for_bai/view/widgets/image_widget.dart';
 import 'package:sizer/sizer.dart';

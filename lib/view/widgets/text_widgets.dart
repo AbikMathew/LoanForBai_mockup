@@ -23,16 +23,21 @@ class Heading extends StatelessWidget {
 }
 
 class SubHeading extends StatelessWidget {
-  const SubHeading({Key? key, required this.text, this.fontSize = 18})
+  const SubHeading(
+      {Key? key, required this.text, this.fontSize = 19, this.leftPadding = 0})
       : super(key: key);
   final String text;
   final double fontSize;
+  final double leftPadding;
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      text,
-      style: TextStyle(fontSize: fontSize, color: kBlackBase),
+    return Padding(
+      padding: EdgeInsets.only(left: leftPadding),
+      child: Text(
+        text,
+        style: TextStyle(fontSize: fontSize, color: kBlackBase),
+      ),
     );
   }
 }

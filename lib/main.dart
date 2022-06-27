@@ -12,6 +12,7 @@ import 'view/pages/bank_details_verified/bank_details_verified.dart';
 import 'view/pages/loan_amount_finalisation/loan_amount_finalisation.dart';
 import 'view/pages/loan_amount_transferred/loan_amount_transferred.dart';
 import 'view/pages/loan_amount_transferring/loan_amount_transferring.dart';
+import 'view/pages/menu_screen/menu_screen.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(primarySwatch: Colors.purple),
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: LoanAmountFinalisation(),
+        home: MenuScreen(),
         //home: BasicDetailsName(),
         //  home: const OtpVerification()
         //home: SplashScreen(),
