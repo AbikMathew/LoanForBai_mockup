@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:get/get.dart';
-import 'package:get/get_rx/src/rx_typedefs/rx_typedefs.dart';
 import 'package:loans_for_bai/constants/color_constants.dart';
 import 'package:loans_for_bai/constants/ui_constants.dart';
 import 'package:loans_for_bai/view/widgets/image_widget.dart';
 import 'package:loans_for_bai/view/widgets/text_widgets.dart';
-import 'package:sizer/sizer.dart';
+import '../../widgets/grey_divider.dart';
 
 class MenuScreen extends StatelessWidget {
   const MenuScreen({Key? key}) : super(key: key);
@@ -95,22 +91,6 @@ class IconTextRowButton extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-}
-
-class GreyDivider extends StatelessWidget {
-  const GreyDivider({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Divider(
-      height: 25,
-      color: kGreyBase,
-      //indent: 20,
-      thickness: 2,
     );
   }
 }

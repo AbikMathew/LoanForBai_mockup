@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:loans_for_bai/view/pages/employer_feedback_verification/employer_feedback_verification.dart';
 import 'package:loans_for_bai/view/pages/home_screen/home_screen.dart';
 import 'package:loans_for_bai/view/pages/home_screen_loan_approved/home_screen_loan_approved.dart';
+import 'package:loans_for_bai/view/pages/navbar/navbar.dart';
 import 'view/pages/bank_details/bank_details.dart';
 import 'view/pages/bank_details_verification/bank_details_verification.dart';
 import 'package:sizer/sizer.dart';
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(primarySwatch: Colors.purple),
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: MenuScreen(),
+        home: Navbar(),
         //home: BasicDetailsName(),
         //  home: const OtpVerification()
         //home: SplashScreen(),
