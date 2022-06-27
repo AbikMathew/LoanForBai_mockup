@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:loans_for_bai/view/pages/otp_verification/otp_verification.dart';
 import 'package:loans_for_bai/view/pages/splash_screen/splash_screen.dart';
 import 'package:sizer/sizer.dart';
 import 'package:get/get.dart';
@@ -22,13 +23,11 @@ class MyApp extends StatelessWidget {
       return GetMaterialApp(
         theme: ThemeData(
           primarySwatch: Colors.purple,
-          // pageTransitionsTheme: const PageTransitionsTheme(builders: {
-          //   TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),
-          // }),
         ),
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: const SplashScreen(),
+        home: OtpVerification(),
+        //home: const SplashScreen(),
       );
     });
   }

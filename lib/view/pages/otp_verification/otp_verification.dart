@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
 import 'package:loans_for_bai/view/pages/basic_details_name/basic_details_name.dart';
 import 'package:loans_for_bai/view/widgets/image_widget.dart';
 import 'package:loans_for_bai/view/widgets/text_widgets.dart';
+import 'package:pinput/pinput.dart';
 import 'package:sizer/sizer.dart';
-
 import '../../../constants/ui_constants.dart';
 import '../../widgets/custom_button.dart';
 
@@ -26,7 +24,14 @@ class OtpVerification extends StatelessWidget {
               text: 'OTP Daalien',
               fontSize: 20,
             ),
-            VerifyButtonAndTermsOfUser(() => Get.offAll(const BasicDetailsName(),
+            kHeight9,
+            Center(
+              child: Pinput(
+                onCompleted: (pin) => print(pin),
+              ),
+            ),
+            VerifyButtonAndTermsOfUser(() => Get.offAll(
+                const BasicDetailsName(),
                 transition: Transition.rightToLeft)),
           ],
         ),
@@ -40,7 +45,7 @@ Column VerifyButtonAndTermsOfUser(VoidCallback onTap) {
     crossAxisAlignment: CrossAxisAlignment.center,
     children: [
       Container(),
-      kHeight7,
+      kHeight5,
       CustomButton(
         onTap: onTap,
         text: 'Verify Karien',

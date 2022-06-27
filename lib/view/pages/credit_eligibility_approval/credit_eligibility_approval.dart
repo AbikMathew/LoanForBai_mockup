@@ -34,7 +34,7 @@ class CreditEligibilityApproval extends StatelessWidget {
                   ),
                   kHeight10,
                   CustomButton(
-                    onTap: () => Get.to(const LoanAmountFinalisation(),
+                    onTap: () => Get.offAll(const LoanAmountFinalisation(),
                         transition: Transition.rightToLeft),
                     text: 'Loan lein',
                     width: 80.w,
