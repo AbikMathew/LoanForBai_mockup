@@ -41,7 +41,7 @@ class _LoanAmountFinalisationState extends State<LoanAmountFinalisation> {
             LoanTimeSlider(),
             kHeight5,
             LoanDetailsColumn(),
-            kHeight10,
+            kHeight4,
             Center(
                 child: CustomButton(
               onTap: () => Get.to(const BankDetails(),
@@ -55,7 +55,7 @@ class _LoanAmountFinalisationState extends State<LoanAmountFinalisation> {
     );
   }
 
-  Column LoanAmountSlider() {
+  Column LoanAmountSlider() { 
     return Column(
       children: [
         Slider(
@@ -110,7 +110,7 @@ Container LoanDetailsColumn() {
   return Container(
     padding: const EdgeInsets.all(15),
     width: 92.w,
-    height: 18.h,
+    height: 22.h,
     decoration: BoxDecoration(border: Border.all(color: kGreyBase, width: 2)),
     child: Row(
       children: [

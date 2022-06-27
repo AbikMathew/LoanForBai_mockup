@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 import '../../constants/color_constants.dart';
 
@@ -17,14 +18,18 @@ class Heading extends StatelessWidget {
     return Text(
       text,
       textAlign: textAlignment,
-      style: TextStyle(fontSize: fontSize, color: kBlackBase),
+      style: TextStyle(
+          fontSize: fontSize.sp,
+          color: kBlackBase,
+          fontFamily: 'ArabicFont',
+          fontWeight: FontWeight.bold),
     );
   }
 }
 
 class SubHeading extends StatelessWidget {
   const SubHeading(
-      {Key? key, required this.text, this.fontSize = 19, this.leftPadding = 0})
+      {Key? key, required this.text, this.fontSize = 18, this.leftPadding = 0})
       : super(key: key);
   final String text;
   final double fontSize;
@@ -36,7 +41,11 @@ class SubHeading extends StatelessWidget {
       padding: EdgeInsets.only(left: leftPadding),
       child: Text(
         text,
-        style: TextStyle(fontSize: fontSize, color: kBlackBase),
+        style: TextStyle(
+            fontSize: fontSize.sp,
+            color: kBlackBase,
+            fontFamily: 'ArabicFont',
+            fontWeight: FontWeight.bold),
       ),
     );
   }
@@ -50,7 +59,11 @@ class LightHintText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: const TextStyle(fontSize: 17, color: Colors.grey),
+      style: TextStyle(
+          fontSize: 17.sp,
+          color: Colors.grey,
+          fontFamily: 'ArabicFont',
+          fontWeight: FontWeight.bold),
     );
   }
 }

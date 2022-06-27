@@ -8,7 +8,7 @@ import 'package:loans_for_bai/constants/ui_constants.dart';
 import 'package:loans_for_bai/view/pages/credit_eligibility_approval/credit_eligibility_approval.dart';
 import 'package:lottie/lottie.dart';
 
-import '../../widgets/CenterHeadingWithIcon.dart';
+import '../../widgets/center_heading_with_icon.dart';
 import '../../widgets/image_widget.dart';
 import '../../widgets/text_widgets.dart';
 import '../login_screen/login_screen.dart';

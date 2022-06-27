@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loans_for_bai/view/pages/navbar/navbar.dart';
-import '../../widgets/CenterHeadingWithIcon.dart';
+import '../../widgets/center_heading_with_icon.dart';
 import '../home_screen_loan_approved/home_screen_loan_approved.dart';
 
 class LoanAmountTransferred extends StatelessWidget {

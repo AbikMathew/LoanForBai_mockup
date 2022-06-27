@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loans_for_bai/view/pages/loan_amount_transferring/loan_amount_transferring.dart';
-import '../../widgets/CenterHeadingWithIcon.dart';
+import '../../widgets/center_heading_with_icon.dart';
 
 class BankDetailsVerified extends StatelessWidget {
   const BankDetailsVerified({Key? key}) : super(key: key);

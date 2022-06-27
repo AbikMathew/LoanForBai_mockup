@@ -33,24 +33,24 @@ class _BankDetailsState extends State<BankDetails> {
               const ImgWidget(),
               const Heading(
                 text: '6,000 aapke bank account Jama kiye jayenge!',
-                fontSize: 27,
+                fontSize: 23,
               ),
               kHeight3,
-              const Heading(text: 'Bank Name', fontSize: 24),
+              const Heading(text: 'Bank Name', fontSize: 22),
               kHeight1,
               CustomTextField(
                 onChanged: (vale) {},
                 hintText: 'Bank Name',
               ),
               kHeight2,
-              const Heading(text: 'Account Number', fontSize: 24),
+              const Heading(text: 'Account Number', fontSize: 22),
               kHeight1,
               CustomTextField(
                 onChanged: (vale) {},
                 hintText: 'Account Number',
               ),
               kHeight2,
-              const Heading(text: 'Branch Address', fontSize: 24),
+              const Heading(text: 'Branch Address', fontSize: 22),
               kHeight1,
               CustomTextField(
                 onChanged: (vale) {},
@@ -58,6 +58,7 @@ class _BankDetailsState extends State<BankDetails> {
               ),
               kHeight3,
               CustomCheckboxTile(),
+              kHeight2,
               Center(
                 child: CustomButton(
                   onTap: () => Get.to(const BankDetailsVerification(),
@@ -93,7 +94,7 @@ class _BankDetailsState extends State<BankDetails> {
         kWidth2,
         const SubHeading(
           text: 'Issi account se loan amount wapas hoga!',
-          fontSize: 15,
+          fontSize: 14,
         ),
       ],
     );

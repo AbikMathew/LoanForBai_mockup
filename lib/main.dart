@@ -15,17 +15,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return Sizer(builder: (context, orientation, deviceType) {
-      return GetMaterialApp(
-        theme: ThemeData(
-          primarySwatch: Colors.purple,
-        ),
+      return const GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: const SplashScreen(),
+        home: SplashScreen(),
       );
     });
   }

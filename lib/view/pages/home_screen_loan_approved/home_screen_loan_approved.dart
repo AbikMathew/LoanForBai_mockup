@@ -4,7 +4,7 @@ import 'package:loans_for_bai/constants/ui_constants.dart';
 import 'package:loans_for_bai/view/widgets/image_widget.dart';
 import 'package:loans_for_bai/view/widgets/text_widgets.dart';
 import 'package:sizer/sizer.dart';
-import '../../widgets/HomeScreenLoanContainer.dart';
+import '../../widgets/home_screen_loan_container.dart';
 
 class HomeScreenLoanApproved extends StatelessWidget {
   const HomeScreenLoanApproved({Key? key, required this.showLoanDetailsColumn})
@@ -35,7 +35,7 @@ class HomeScreenLoanApproved extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(15),
       width: 92.w,
-      height: 28.h,
+      height: 34.h,
       decoration: BoxDecoration(border: Border.all(color: kGreyBase, width: 2)),
       child: Row(
         children: [
