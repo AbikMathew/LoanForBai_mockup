@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:loans_for_bai/view/widgets/image_widget.dart';
 import 'package:loans_for_bai/view/widgets/text_widgets.dart';
 import 'package:sizer/sizer.dart';
-
 import '../../constants/color_constants.dart';
 import '../../constants/ui_constants.dart';
 
@@ -31,7 +30,7 @@ class CenterHeadingWithIcon extends StatelessWidget {
           Heading(
             textAlignment: textAlignment,
             text: heading,
-            fontSize: 25,
+            fontSize: 22,
           ),
           kHeight7,
           Stack(

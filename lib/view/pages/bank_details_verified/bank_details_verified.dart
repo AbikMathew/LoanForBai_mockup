@@ -17,7 +17,7 @@ class BankDetailsVerified extends StatelessWidget {
     );
     return const Scaffold(
       body: CenterHeadingWithIcon(
-        heading: 'Aapka account Verify ho gya',
+        heading: 'Aapka account Verify ho gya!',
         icon: CupertinoIcons.checkmark_shield_fill,
         showTick: false,
       ),
