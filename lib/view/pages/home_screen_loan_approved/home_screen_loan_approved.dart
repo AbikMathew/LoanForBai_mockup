@@ -22,7 +22,7 @@ class HomeScreenLoanApproved extends StatelessWidget {
             const ImgWidget(),
             kHeight2,
             Visibility(
-                visible: showLoanDetailsColumn, child: LoanDetailsColumn()),
+                visible: showLoanDetailsColumn, child: loanDetailsColumn()),
             kHeight3,
             const HomeScreenLoanContainer()
           ],
@@ -31,7 +31,7 @@ class HomeScreenLoanApproved extends StatelessWidget {
     );
   }
 
-  Container LoanDetailsColumn() {
+  Container loanDetailsColumn() {
     return Container(
       padding: const EdgeInsets.all(15),
       width: 92.w,

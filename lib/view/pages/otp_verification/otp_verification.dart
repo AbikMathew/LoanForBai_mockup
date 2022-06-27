@@ -27,10 +27,10 @@ class OtpVerification extends StatelessWidget {
             kHeight9,
             Center(
               child: Pinput(
-                onCompleted: (pin) => print(pin),
+                onCompleted: (pin) {},
               ),
             ),
-            VerifyButtonAndTermsOfUser(() => Get.offAll(
+            verifyButtonAndTermsOfUser(() => Get.offAll(
                 const BasicDetailsName(),
                 transition: Transition.rightToLeft)),
           ],
@@ -40,7 +40,7 @@ class OtpVerification extends StatelessWidget {
   }
 }
 
-Column VerifyButtonAndTermsOfUser(VoidCallback onTap) {
+Column verifyButtonAndTermsOfUser(VoidCallback onTap) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.center,
     children: [

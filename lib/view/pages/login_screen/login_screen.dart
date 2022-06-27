@@ -2,13 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loans_for_bai/constants/color_constants.dart';
 import 'package:loans_for_bai/constants/text_constants.dart';
-//import 'package:loans_for_bai/constants/ui_constants';
 import 'package:loans_for_bai/constants/ui_constants.dart';
 import 'package:loans_for_bai/view/pages/otp_verification/otp_verification.dart';
 import 'package:loans_for_bai/view/widgets/custom_button.dart';
 import 'package:sizer/sizer.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:loans_for_bai/view/widgets/image_widget.dart';
 import 'package:loans_for_bai/view/widgets/text_widgets.dart';
 
@@ -36,12 +33,15 @@ class LoginScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   kWidth3,
-                  const Heading(text: '+91',fontSize: 35,),
+                  const Heading(
+                    text: '+91',
+                    fontSize: 35,
+                  ),
                   kWidth1,
-                  InputTextField(),
+                  inputTextField(),
                 ],
               ),
-              OTPButtonAndTermsOfUser(onTap: () {
+              oTPButtonAndTermsOfUser(onTap: () {
                 Get.to(const OtpVerification(),
                     transition: Transition.rightToLeft);
               }),
@@ -52,7 +52,7 @@ class LoginScreen extends StatelessWidget {
     );
   }
 
-  Column OTPButtonAndTermsOfUser({required onTap}) {
+  Column oTPButtonAndTermsOfUser({required onTap}) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
@@ -72,7 +72,7 @@ class LoginScreen extends StatelessWidget {
     );
   }
 
-  SizedBox InputTextField() {
+  SizedBox inputTextField() {
     return SizedBox(
       height: 7.h,
       width: 67.w,

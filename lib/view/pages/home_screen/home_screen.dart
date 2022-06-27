@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:loans_for_bai/constants/color_constants.dart';
 import 'package:loans_for_bai/constants/ui_constants.dart';
 import 'package:loans_for_bai/view/widgets/image_widget.dart';
-import 'package:loans_for_bai/view/widgets/text_widgets.dart';
-import 'package:sizer/sizer.dart';
 import '../../widgets/home_screen_loan_container.dart';
 
 class HomeScreen extends StatelessWidget {

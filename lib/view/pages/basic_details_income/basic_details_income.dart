@@ -7,8 +7,6 @@ import 'package:sizer/sizer.dart';
 import '../../widgets/image_widget.dart';
 import '../../widgets/text_widgets.dart';
 import '../../widgets/custom_text_field.dart';
-
-import 'package:loans_for_bai/view/pages/basic_details_dob/basic_details_dob.dart';
 import '../../widgets/custom_progress_indicator.dart';
 
 class BasicDetailsIncome extends StatelessWidget {

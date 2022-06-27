@@ -55,7 +55,7 @@ class _BankDetailsState extends State<BankDetails> {
                 hintText: 'Branch Address',
               ),
               kHeight3,
-              CustomCheckboxTile(),
+              customCheckboxTile(),
               kHeight2,
               Center(
                 child: CustomButton(
@@ -72,7 +72,7 @@ class _BankDetailsState extends State<BankDetails> {
     );
   }
 
-  Row CustomCheckboxTile() {
+  Row customCheckboxTile() {
     return Row(
       children: [
         SizedBox(

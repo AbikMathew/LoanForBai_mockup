@@ -32,15 +32,15 @@ class _LoanAmountFinalisationState extends State<LoanAmountFinalisation> {
               text: 'Kitna Loan Chahiye?',
               fontSize: 22,
             ),
-            LoanAmountSlider(),
+            loanAmountSlider(),
             kHeight5,
             const SubHeading(
               text: 'Kitna samay ke liye Chahiye?',
               fontSize: 22,
             ),
-            LoanTimeSlider(),
+            loanTimeSlider(),
             kHeight5,
-            LoanDetailsColumn(),
+            loanDetailsColumn(),
             kHeight4,
             Center(
                 child: CustomButton(
@@ -55,7 +55,7 @@ class _LoanAmountFinalisationState extends State<LoanAmountFinalisation> {
     );
   }
 
-  Column LoanAmountSlider() { 
+  Column loanAmountSlider() {
     return Column(
       children: [
         Slider(
@@ -80,7 +80,7 @@ class _LoanAmountFinalisationState extends State<LoanAmountFinalisation> {
     );
   }
 
-  Column LoanTimeSlider() {
+  Column loanTimeSlider() {
     return Column(
       children: [
         Slider(
@@ -106,7 +106,7 @@ class _LoanAmountFinalisationState extends State<LoanAmountFinalisation> {
   }
 }
 
-Container LoanDetailsColumn() {
+Container loanDetailsColumn() {
   return Container(
     padding: const EdgeInsets.all(15),
     width: 92.w,

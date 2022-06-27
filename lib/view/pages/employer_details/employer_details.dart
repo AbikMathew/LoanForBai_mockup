@@ -7,7 +7,6 @@ import 'package:sizer/sizer.dart';
 import '../../../constants/color_constants.dart';
 import '../../widgets/image_widget.dart';
 import '../../widgets/text_widgets.dart';
-import 'package:loans_for_bai/view/pages/credit_eligibility_approval/credit_eligibility_approval.dart';
 import '../../widgets/custom_text_field.dart';
 
 class EmployerDetails extends StatelessWidget {
@@ -31,7 +30,7 @@ class EmployerDetails extends StatelessWidget {
                   text:
                       'Jinke pass aap kaam karte hain, unka mobile number dein'),
               kHeight2,
-              AddEmployerGrid(),
+              addEmployerGrid(),
               kHeight5,
               Center(
                 child: CustomButton(
@@ -51,7 +50,7 @@ class EmployerDetails extends StatelessWidget {
     );
   }
 
-  Column AddEmployerGrid() {
+  Column addEmployerGrid() {
     return Column(
       children: [
         Row(

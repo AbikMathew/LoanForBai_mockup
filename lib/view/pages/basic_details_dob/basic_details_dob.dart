@@ -12,7 +12,7 @@ import '../../widgets/image_widget.dart';
 import '../../widgets/text_widgets.dart';
 
 class BasicDetailsDob extends StatefulWidget {
-  BasicDetailsDob({Key? key}) : super(key: key);
+  const BasicDetailsDob({Key? key}) : super(key: key);
 
   @override
   State<BasicDetailsDob> createState() => _BasicDetailsDobState();

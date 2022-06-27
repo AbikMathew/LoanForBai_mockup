@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loans_for_bai/view/pages/navbar/navbar.dart';
 import '../../widgets/center_heading_with_icon.dart';
-import '../home_screen_loan_approved/home_screen_loan_approved.dart';
 
 class LoanAmountTransferred extends StatelessWidget {
   const LoanAmountTransferred({Key? key}) : super(key: key);
@@ -13,7 +12,8 @@ class LoanAmountTransferred extends StatelessWidget {
   Widget build(BuildContext context) {
     Timer(
       const Duration(seconds: 2),
-      () => Get.off(const Navbar(showLoanDetailsColumn: true), transition: Transition.rightToLeft),
+      () => Get.off(const Navbar(showLoanDetailsColumn: true),
+          transition: Transition.rightToLeft),
     );
     return const Scaffold(
       body: CenterHeadingWithIcon(

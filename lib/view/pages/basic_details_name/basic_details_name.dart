@@ -39,7 +39,7 @@ class BasicDetailsName extends StatelessWidget {
             Center(
               child: CustomButton(
                 onTap: () {
-                  Get.to( BasicDetailsDob(),
+                  Get.to( const BasicDetailsDob(),
                       transition: Transition.rightToLeft);
                 },
                 text: 'Aage badhein',
