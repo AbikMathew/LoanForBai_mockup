@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:loans_for_bai/constants/color_constants.dart';
 import 'package:loans_for_bai/view/pages/home_screen/home_screen.dart';
+import 'package:loans_for_bai/view/pages/home_screen_loan_approved/home_screen_loan_approved.dart';
 import 'package:loans_for_bai/view/pages/menu_screen/menu_screen.dart';
 
 class Navbar extends StatefulWidget {
@@ -16,7 +15,7 @@ class Navbar extends StatefulWidget {
 class _NavbarState extends State<Navbar> {
   int index = 0;
   final screens = [
-    const HomeScreen(),
+    const HomeScreenLoanApproved(),
     const MenuScreen(),
   ];
 

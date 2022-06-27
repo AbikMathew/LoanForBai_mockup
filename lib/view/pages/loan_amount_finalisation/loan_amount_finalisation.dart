@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:loans_for_bai/view/pages/bank_details/bank_details.dart';
 import 'package:loans_for_bai/view/widgets/custom_button.dart';
 import 'package:loans_for_bai/view/widgets/image_widget.dart';
 import 'package:sizer/sizer.dart';
@@ -39,10 +41,11 @@ class _LoanAmountFinalisationState extends State<LoanAmountFinalisation> {
             LoanTimeSlider(),
             kHeight5,
             LoanDetailsColumn(),
-            kHeight7,
+            kHeight10,
             Center(
                 child: CustomButton(
-              onTap: () {},
+              onTap: () => Get.to(const BankDetails(),
+                  transition: Transition.rightToLeft),
               text: 'Account details dein',
               width: 80.w,
             )),

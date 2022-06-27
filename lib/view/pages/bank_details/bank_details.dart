@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get/get.dart';
 import 'package:loans_for_bai/constants/color_constants.dart';
 import 'package:loans_for_bai/constants/ui_constants.dart';
+import 'package:loans_for_bai/view/pages/bank_details_verification/bank_details_verification.dart';
 import 'package:loans_for_bai/view/widgets/custom_button.dart';
 import 'package:loans_for_bai/view/widgets/image_widget.dart';
 import 'package:loans_for_bai/view/widgets/text_widgets.dart';
@@ -58,7 +60,8 @@ class _BankDetailsState extends State<BankDetails> {
               CustomCheckboxTile(),
               Center(
                 child: CustomButton(
-                  onTap: () {},
+                  onTap: () => Get.to(const BankDetailsVerification(),
+                      transition: Transition.rightToLeft),
                   text: 'Account me transfer karein',
                   width: 80.w,
                 ),

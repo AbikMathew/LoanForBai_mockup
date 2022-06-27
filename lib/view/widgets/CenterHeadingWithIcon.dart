@@ -11,11 +11,13 @@ class CenterHeadingWithIcon extends StatelessWidget {
     Key? key,
     required this.heading,
     required this.icon,
+    required this.showTick,
     this.textAlignment = TextAlign.start,
   }) : super(key: key);
   final String heading;
   final IconData icon;
   final TextAlign textAlignment;
+  final bool showTick;
 
   @override
   Widget build(BuildContext context) {
@@ -41,10 +43,17 @@ class CenterHeadingWithIcon extends StatelessWidget {
                   color: kPurple,
                 ),
               ),
-              Positioned(
-                right: 15.w,
-                top: -3.h,
-                child: const Icon(Icons.check,size: 150,color: kGreyBase,))
+              Visibility(
+                visible: showTick,
+                child: Positioned(
+                    right: 15.w,
+                    top: -3.h,
+                    child: const Icon(
+                      Icons.check,
+                      size: 150,
+                      color: kGreyBase,
+                    )),
+              )
             ],
           ),
         ],

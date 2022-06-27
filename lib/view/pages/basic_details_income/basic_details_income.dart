@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loans_for_bai/constants/ui_constants.dart';
+import 'package:loans_for_bai/view/pages/employer_details/employer_details.dart';
 import 'package:loans_for_bai/view/widgets/custom_button.dart';
 import 'package:sizer/sizer.dart';
 import '../../widgets/image_widget.dart';
@@ -42,7 +43,8 @@ class BasicDetailsIncome extends StatelessWidget {
             Center(
               child: CustomButton(
                 onTap: () {
-                  Get.to(const BasicDetailsDob());
+                  Get.to(const EmployerDetails(),
+                      transition: Transition.rightToLeft);
                 },
                 text: 'Loan Payein',
                 width: 80.w,

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:loans_for_bai/view/pages/loan_amount_finalisation/loan_amount_finalisation.dart';
 import 'package:loans_for_bai/view/widgets/custom_button.dart';
 import 'package:loans_for_bai/view/widgets/text_widgets.dart';
 import 'package:sizer/sizer.dart';
@@ -29,7 +31,7 @@ class HomeScreenLoanContainer extends StatelessWidget {
             ),
             kHeight4,
             CustomButton(
-              onTap: () {},
+              onTap: () => Get.to(const LoanAmountFinalisation()),
               text: 'Loan Lein',
               width: 40.w,
             ),

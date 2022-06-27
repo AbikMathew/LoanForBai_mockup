@@ -42,7 +42,8 @@ class BasicDetailsEmployment extends StatelessWidget {
             Center(
               child: CustomButton(
                 onTap: () {
-                  Get.to(const BasicDetailsIncome());
+                  Get.to(const BasicDetailsIncome(),
+                      transition: Transition.rightToLeft);
                 },
                 text: 'Aage badhein',
                 width: 80.w,

@@ -56,7 +56,8 @@ class BasicDetailsDob extends StatelessWidget {
             Center(
               child: CustomButton(
                 onTap: () {
-                  Get.to(const BasicDetailsEmployment());
+                  Get.to(const BasicDetailsEmployment(),
+                      transition: Transition.rightToLeft);
                 },
                 text: 'Aage badhein',
                 width: 75.w,

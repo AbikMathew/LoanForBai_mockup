@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:loans_for_bai/constants/color_constants.dart';
 import 'package:loans_for_bai/constants/text_constants.dart';
 //import 'package:loans_for_bai/constants/ui_constants';
 import 'package:loans_for_bai/constants/ui_constants.dart';
+import 'package:loans_for_bai/view/pages/otp_verification/otp_verification.dart';
 import 'package:loans_for_bai/view/widgets/custom_button.dart';
 import 'package:sizer/sizer.dart';
 import 'package:flutter/src/foundation/key.dart';
@@ -38,7 +40,10 @@ class LoginScreen extends StatelessWidget {
                   InputTextField(),
                 ],
               ),
-              OTPButtonAndTermsOfUser(),
+              OTPButtonAndTermsOfUser(onTap: () {
+                Get.to(const OtpVerification(),
+                    transition: Transition.rightToLeft);
+              }),
             ],
           ),
         ),
@@ -46,14 +51,14 @@ class LoginScreen extends StatelessWidget {
     );
   }
 
-  Column OTPButtonAndTermsOfUser() {
+  Column OTPButtonAndTermsOfUser({required onTap}) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Container(),
         kHeight7,
         CustomButton(
-          onTap: () {},
+          onTap: onTap,
           text: 'OTP Payein',
           width: 80.w,
         ),

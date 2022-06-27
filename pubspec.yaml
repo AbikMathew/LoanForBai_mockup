@@ -33,6 +33,7 @@ dependencies:
   font_awesome_flutter: ^10.1.0
   get: ^4.6.5
   lottie: ^1.3.0
+  pinput: ^2.2.11
   sizer: ^2.0.15
 
 dev_dependencies:

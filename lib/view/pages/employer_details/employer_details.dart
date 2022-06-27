@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loans_for_bai/constants/ui_constants.dart';
+import 'package:loans_for_bai/view/pages/employer_feedback_verification/employer_feedback_verification.dart';
 import 'package:loans_for_bai/view/widgets/custom_button.dart';
 import 'package:sizer/sizer.dart';
 import '../../../constants/color_constants.dart';
@@ -35,7 +36,8 @@ class EmployerDetails extends StatelessWidget {
               Center(
                 child: CustomButton(
                   onTap: () {
-                    Get.to(const CreditEligibilityApproval());
+                    Get.to(const EmployerFeedbackVerification(),
+                        transition: Transition.rightToLeft);
                   },
                   text: 'Loan Amount janein',
                   width: 55.w,
